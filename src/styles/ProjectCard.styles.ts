@@ -78,4 +78,7 @@ export const styles = {
       ${theme.colors.accent.hover}
     `,
   },
+  price: "text-green-600 font-semibold text-lg mb-2",
+  newsInfo: "text-gray-600 text-sm mb-2",
+  blogInfo: "text-gray-600 text-sm mb-2",
 };
