@@ -1,25 +1,28 @@
 export const theme = {
   colors: {
     primary: {
-      bg: "bg-blue-500",
-      hover: "hover:bg-blue-600",
+      bg: "bg-indigo-600/90",
+      hover: "hover:bg-indigo-500",
     },
     secondary: {
-      bg: "bg-gray-700",
-      hover: "hover:bg-gray-600",
+      bg: "bg-zinc-800",
+      hover: "hover:bg-zinc-700",
     },
     accent: {
-      bg: "bg-purple-600",
-      hover: "hover:bg-purple-700",
+      bg: "bg-emerald-600/90",
+      hover: "hover:bg-emerald-500",
     },
     card: {
-      bg: "bg-white/10",
-      hover: "hover:bg-white/15",
+      bg: "bg-zinc-900/50",
+      hover: "hover:bg-zinc-900/60",
+      border: "border-zinc-800",
+      borderHover: "hover:border-zinc-700",
     },
     text: {
-      primary: "text-white",
-      secondary: "text-gray-300",
+      primary: "text-zinc-100",
+      secondary: "text-zinc-400",
     },
+    gradient: "from-transparent to-black/20",
   },
   spacing: {
     card: "p-6",
@@ -34,9 +37,18 @@ export const theme = {
     button: "rounded-lg",
   },
   typography: {
-    title: "text-2xl font-semibold",
-    description: "text-sm leading-relaxed",
-    button: "text-sm",
+    title: "text-xl font-bold",
+    description: "text-sm leading-relaxed line-clamp-5",
+    button: "text-sm font-medium",
+    pill: "text-xs",
+  },
+  effects: {
+    hover: "hover:shadow-lg hover:shadow-zinc-900/20 hover:-translate-y-1",
+    buttonHover: "hover:scale-105 active:scale-95",
+    blur: "backdrop-blur-sm",
+  },
+  sizing: {
+    description: "h-[120px]",
   },
   layout: {
     container: {

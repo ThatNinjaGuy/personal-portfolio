@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Project } from "@/constants/projects";
 import { styles } from "@/styles/ProjectCard.styles";
+import { Icon } from "@/components/icons/IconMap";
 
 interface ProjectCardProps {
   project: Project;
@@ -34,6 +35,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             rel="noopener noreferrer"
             className={`${styles.link.base} ${styles.link.github}`}
           >
+            <Icon type="github" className="inline-block w-4 h-4 mr-1" />
             GitHub
           </Link>
 
@@ -45,6 +47,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               rel="noopener noreferrer"
               className={`${styles.link.base} ${styles.link.associated}`}
             >
+              <Icon type={link.icon} className="inline-block w-4 h-4 mr-1" />
               {link.title}
             </Link>
           ))}
